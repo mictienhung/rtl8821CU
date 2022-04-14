@@ -1,10 +1,16 @@
 # total work on ubuntu
 sudo apt update
+
 sudo apt install build-essential git dkms (not sure if need install `bc`)
+
 git clone https://github.com/brektrou/rtl8821CU.git
+
 cd rtl8821CU
+
 chmod +x dkms-install.sh
+
 sudo ./dkms-install.sh
+
 sudo modprobe 8821cu
 
 # Realtek RTL8811CU/RTL8821CU USB wifi adapter driver version 5.4.1 for Linux 4.4.x up to 5.x
